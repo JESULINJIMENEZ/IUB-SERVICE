@@ -97,4 +97,7 @@ Reporte.init({
 
 Area.hasMany(Reporte, { foreignKey: 'area_id', sourceKey: 'id' });
 Reporte.belongsTo(Area, { foreignKey: 'area_id', targetKey: 'id' });
+
+Reporte.sync()
+
 export default Reporte;

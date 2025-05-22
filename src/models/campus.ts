@@ -43,5 +43,7 @@ Campus.init({
     sequelize,
 });
 
+Campus.sync()
+
 
 export default Campus;

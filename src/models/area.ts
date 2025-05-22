@@ -45,4 +45,6 @@ Area.init({
 Campus.hasMany(Area, {foreignKey: 'campus_id', sourceKey: 'id'});
 Area.belongsTo(Campus, {foreignKey: 'campus_id', targetKey: 'id'});
 
+Area.sync()
+
 export default Area;

@@ -88,4 +88,6 @@ Inspecciones.belongsTo(Area, { foreignKey: 'area_id', });
 User.hasMany(Inspecciones, { foreignKey: 'user_id'});
 Inspecciones.belongsTo(User, { foreignKey: 'user_id'});
 
+Inspecciones.sync()
+
 export default Inspecciones;

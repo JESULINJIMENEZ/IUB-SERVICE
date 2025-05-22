@@ -45,3 +45,8 @@ Aire.init({
 
 Area.hasMany(Aire, {foreignKey: 'area_id', sourceKey: 'id'});
 Aire.belongsTo(Area, {foreignKey: 'area_id', targetKey: 'id'});
+
+
+Aire.sync()
+
+export default Aire
