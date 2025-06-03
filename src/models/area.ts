@@ -42,8 +42,8 @@ Area.init({
     sequelize,
 })
 
-Campus.hasMany(Area, {foreignKey: 'campus_id', sourceKey: 'id'});
-Area.belongsTo(Campus, {foreignKey: 'campus_id', targetKey: 'id'});
+Campus.hasMany(Area, {foreignKey: 'campus_id' });
+Area.belongsTo(Campus, {foreignKey: 'campus_id'});
 
 Area.sync()
 
